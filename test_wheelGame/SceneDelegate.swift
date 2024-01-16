@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  test_wheelGame
 //
-//  Created by User on 11.01.2024.
+//  Created by Anton on 11.01.2024.
 //
 
 import UIKit

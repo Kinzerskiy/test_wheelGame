@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE09A6E32B557B2200CA2D5F /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09A6E22B557B2200CA2D5F /* WheelView.swift */; };
+		CE09A6E52B5599AC00CA2D5F /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09A6E42B5599AC00CA2D5F /* GameViewModel.swift */; };
 		CE944D2D2B504C0B0022385D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE944D2C2B504C0B0022385D /* AppDelegate.swift */; };
 		CE944D2F2B504C0B0022385D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE944D2E2B504C0B0022385D /* SceneDelegate.swift */; };
-		CE944D312B504C0B0022385D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE944D302B504C0B0022385D /* ViewController.swift */; };
+		CE944D312B504C0B0022385D /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE944D302B504C0B0022385D /* StartGameViewController.swift */; };
 		CE944D342B504C0B0022385D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE944D322B504C0B0022385D /* Main.storyboard */; };
 		CE944D362B504C0E0022385D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE944D352B504C0E0022385D /* Assets.xcassets */; };
 		CE944D392B504C0E0022385D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE944D372B504C0E0022385D /* LaunchScreen.storyboard */; };
+		CE944D412B5053520022385D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE944D402B5053520022385D /* GameViewController.swift */; };
+		CE9C62482B55C689009B851E /* game_start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE9C62472B55C689009B851E /* game_start.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE09A6E22B557B2200CA2D5F /* WheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelView.swift; sourceTree = "<group>"; };
+		CE09A6E42B5599AC00CA2D5F /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		CE944D292B504C0B0022385D /* test_wheelGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_wheelGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE944D2C2B504C0B0022385D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE944D2E2B504C0B0022385D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE944D302B504C0B0022385D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE944D302B504C0B0022385D /* StartGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 		CE944D332B504C0B0022385D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE944D352B504C0E0022385D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE944D382B504C0E0022385D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE944D3A2B504C0E0022385D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE944D402B5053520022385D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CE9C62472B55C689009B851E /* game_start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = game_start.mp3; path = ../game_start.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE09A6E62B55B15A00CA2D5F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE944D302B504C0B0022385D /* StartGameViewController.swift */,
+				CE944D402B5053520022385D /* GameViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE09A6E72B55B16B00CA2D5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE09A6E42B5599AC00CA2D5F /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE09A6E82B55B17600CA2D5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE09A6E22B557B2200CA2D5F /* WheelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CE944D202B504C0B0022385D = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +91,12 @@
 			children = (
 				CE944D2C2B504C0B0022385D /* AppDelegate.swift */,
 				CE944D2E2B504C0B0022385D /* SceneDelegate.swift */,
-				CE944D302B504C0B0022385D /* ViewController.swift */,
+				CE09A6E62B55B15A00CA2D5F /* ViewControllers */,
+				CE09A6E72B55B16B00CA2D5F /* ViewModel */,
+				CE09A6E82B55B17600CA2D5F /* View */,
 				CE944D322B504C0B0022385D /* Main.storyboard */,
 				CE944D352B504C0E0022385D /* Assets.xcassets */,
+				CE9C62472B55C689009B851E /* game_start.mp3 */,
 				CE944D372B504C0E0022385D /* LaunchScreen.storyboard */,
 				CE944D3A2B504C0E0022385D /* Info.plist */,
 			);
@@ -128,6 +164,7 @@
 				CE944D392B504C0E0022385D /* LaunchScreen.storyboard in Resources */,
 				CE944D362B504C0E0022385D /* Assets.xcassets in Resources */,
 				CE944D342B504C0B0022385D /* Main.storyboard in Resources */,
+				CE9C62482B55C689009B851E /* game_start.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE944D312B504C0B0022385D /* ViewController.swift in Sources */,
+				CE09A6E52B5599AC00CA2D5F /* GameViewModel.swift in Sources */,
+				CE944D412B5053520022385D /* GameViewController.swift in Sources */,
+				CE944D312B504C0B0022385D /* StartGameViewController.swift in Sources */,
+				CE09A6E32B557B2200CA2D5F /* WheelView.swift in Sources */,
 				CE944D2D2B504C0B0022385D /* AppDelegate.swift in Sources */,
 				CE944D2F2B504C0B0022385D /* SceneDelegate.swift in Sources */,
 			);
@@ -218,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -292,6 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N2LF8DTSP7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test_wheelGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,6 +340,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +361,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N2LF8DTSP7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test_wheelGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,6 +369,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
